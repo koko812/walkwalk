@@ -77,7 +77,13 @@ window.onload = async () => {
         heroX += heroMove[0]
         heroY += heroMove[1]
         heroCell = board[heroY][heroX]
-        heroCell.text = '🐥'
-        render()
+        if (heroCell.text) {
+            heroCell.text = '💥'
+            render()
+            return;
+        } else {
+            heroCell.text = '🐥'
+            render()
+        }
     }
 }
