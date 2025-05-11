@@ -80,7 +80,7 @@ const init = () => {
 window.onload = async () => {
     init()
     for (let i = 0; i < 1000; i++) {
-        await new Promise(r => setTimeout(r, 2000))
+        await new Promise(r => setTimeout(r, 300))
         // heroCell は用意するとかえって扱いづらいかもしれない？
         // nextCell とか作ればいいのか，それはそれでわかりづらいか
         //heroCell = board[heroY][heroX]
